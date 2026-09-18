@@ -1,10 +1,10 @@
-import Home from './components/Home'
+import APITester from './components/apitester'
 
 function App() {
 
   return (
     <>
-      <Home />
+      <APITester />
     </>
   )
 }

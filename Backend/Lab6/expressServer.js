@@ -1,10 +1,11 @@
 import express from "express";
 //import dotenv from "dotenv";
-//import cors from "cors";
+import cors from "cors";
 //dotenv.config();
 const port=process.env.PORT||3000;
 const app=express();
 app.use(express.json());    //middleware
+app.use(cors());    //middleware
 const userData=[
     {id: 101,name: "John",email: "john@gmail.com"},
     {id: 102,name: "Alice",email: "alice@example.com"}];
